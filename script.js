@@ -4,7 +4,7 @@ const canvas = document.getElementById('matrix');
 const ctx = canvas.getContext('2d');
 
 // Make the canvas fill the screen
-canvas.width = window.innerWidth;
+canvas.width = window.innerWith;
 canvas.height = window.innerHeight;
 
 // Only 0 and 1 for binary code pattern

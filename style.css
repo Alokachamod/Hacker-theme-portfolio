@@ -55,7 +55,7 @@ canvas {
 .name {
     margin-top: 2vh;
     font-size: 50px;
-    color: green;
+    color: rgb(1, 255, 1);
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -76,101 +76,105 @@ h1 {
   
   /* Typewriter effect 1 */
   @keyframes typing {
-     /* "Aloka Dev" */
-     0%, 10% { content: ""; }
-     1%, 9% { content: "A"; }
-     2%, 8% { content: "Al"; }
-     3%, 7% { content: "Alo"; }
-     4%, 6% { content: "Alok"; }
-     5% { content: "Aloka"; }
-     6% { content: "Aloka "; }
-     7% { content: "Aloka D"; }
-     8% { content: "Aloka De"; }
-     9% { content: "Aloka Dev"; }
-     
-     /* Pause before changing to next word */
-     10%, 20% { content: "Aloka Dev"; }
- 
-     /* "Web Developer" */
-     21%, 30% { content: ""; }
-    22% { content: "F"; }
-    23% { content: "Fu"; }
-    24% { content: "Ful"; }
-    25% { content: "Full"; }
-    26% { content: "Full "; }
-    27% { content: "Full S"; }
-    28% { content: "Full St"; }
-    29% { content: "Full Sta"; }
-    30% { content: "Full Stac"; }
-    31% { content: "Full Stack"; }
-    32% { content: "Full Stack "; }
-    33% { content: "Full Stack D"; }
-    34% { content: "Full Stack De"; }
-    35% { content: "Full Stack Dev"; }
-    36% { content: "Full Stack Deve"; }
-    37% { content: "Full Stack Devel"; }
-    38% { content: "Full Stack Develo"; }
-    39% { content: "Full Stack Develop"; }
-    40% { content: "Full Stack Developer"; }
- 
-     /* Pause before changing to next word */
-     35%, 45% { content: "Web Developer"; }
- 
-     /* "Innovator" */
-     46%, 55% { content: ""; }
-     47% { content: "I"; }
-     48% { content: "In"; }
-     49% { content: "Inn"; }
-     50% { content: "Inno"; }
-     51% { content: "Innov"; }
-     52% { content: "Innova"; }
-     53% { content: "Innovat"; }
-     54% { content: "Innovato"; }
-     55% { content: "Innovator"; }
- 
-     /* Pause before changing to next word */
-     56%, 65% { content: "Innovator"; }
- 
-     /* "Graphic Designer" */
-     66%, 75% { content: ""; }
-     67% { content: "G"; }
-     68% { content: "Gr"; }
-     69% { content: "Gra"; }
-     70% { content: "Grap"; }
-     71% { content: "Graph"; }
-     72% { content: "Graphi"; }
-     73% { content: "Graphic"; }
-     74% { content: "Graphic "; }
-     75% { content: "Graphic D"; }
-     76% { content: "Graphic De"; }
-     77% { content: "Graphic Des"; }
-     78% { content: "Graphic Desi"; }
-     79% { content: "Graphic Desig"; }
-     80% { content: "Graphic Design"; }
-     81% { content: "Graphic Designe"; }
-     82% { content: "Graphic Designer"; }
- 
-     /* Pause before changing to next word */
-     83%, 90% { content: "Graphic Designer"; }
- 
-     /* "Content Creator" */
-     91%, 100% { content: ""; }
-     92% { content: "C"; }
-     93% { content: "Co"; }
-     94% { content: "Con"; }
-     95% { content: "Cont"; }
-     96% { content: "Conte"; }
-     97% { content: "Conten"; }
-     98% { content: "Content"; }
-     99% { content: "Content "; }
-     100% { content: "Content C"; }
-     101% { content: "Content Cr"; }
-     102% { content: "Content Cre"; }
-     103% { content: "Content Crea"; }
-     104% { content: "Content Creat"; }
-     105% { content: "Content Creato"; }
-     106% { content: "Content Creator"; }
-  }
+    /* "Full Stack Developer" */
+    0% { content: ""; }
+    1% { content: "F"; }
+    2% { content: "Fu"; }
+    3% { content: "Ful"; }
+    4% { content: "Full"; }
+    5% { content: "Full "; }
+    6% { content: "Full S"; }
+    7% { content: "Full St"; }
+    8% { content: "Full Sta"; }
+    9% { content: "Full Stac"; }
+    10% { content: "Full Stack"; }
+    11% { content: "Full Stack "; }
+    12% { content: "Full Stack D"; }
+    13% { content: "Full Stack De"; }
+    14% { content: "Full Stack Dev"; }
+    15% { content: "Full Stack Deve"; }
+    16% { content: "Full Stack Devel"; }
+    17% { content: "Full Stack Develo"; }
+    18% { content: "Full Stack Develop"; }
+    19% { content: "Full Stack Developer"; }
+    20%, 25% { content: "Full Stack Developer"; }
+
+    /* Pause before changing to next word */
+    26%, 30% { content: ""; }
+
+    /* "Innovator" */
+    31% { content: "I"; }
+    32% { content: "In"; }
+    33% { content: "Inn"; }
+    34% { content: "Inno"; }
+    35% { content: "Innov"; }
+    36% { content: "Innova"; }
+    37% { content: "Innovat"; }
+    38% { content: "Innovato"; }
+    39%, 45% { content: "Innovator"; }
+
+    /* Pause before changing to next word */
+    46%, 50% { content: ""; }
+
+    /* "Graphic Designer" */
+    51% { content: "G"; }
+    52% { content: "Gr"; }
+    53% { content: "Gra"; }
+    54% { content: "Grap"; }
+    55% { content: "Graph"; }
+    56% { content: "Graphi"; }
+    57% { content: "Graphic"; }
+    58% { content: "Graphic "; }
+    59% { content: "Graphic D"; }
+    60% { content: "Graphic De"; }
+    61% { content: "Graphic Des"; }
+    62% { content: "Graphic Desi"; }
+    63% { content: "Graphic Desig"; }
+    64% { content: "Graphic Design"; }
+    65% { content: "Graphic Designe"; }
+    66% { content: "Graphic Designer"; }
+    67%, 70% { content: "Graphic Designer"; }
+
+    /* Pause before changing to next word */
+    71%, 75% { content: ""; }
+
+    /* "Content Creator" */
+    76% { content: "C"; }
+    77% { content: "Co"; }
+    78% { content: "Con"; }
+    79% { content: "Cont"; }
+    80% { content: "Conte"; }
+    81% { content: "Conten"; }
+    82% { content: "Content"; }
+    83% { content: "Content "; }
+    84% { content: "Content C"; }
+    85% { content: "Content Cr"; }
+    86% { content: "Content Cre"; }
+    87% { content: "Content Crea"; }
+    88% { content: "Content Creat"; }
+    89% { content: "Content Creato"; }
+    90%, 95% { content: "Content Creator"; }
+
+    /* Pause before changing to next word */
+    96%, 100% { content: ""; }
+
+    /* "Researcher" */
+    101% { content: "R"; }
+    102% { content: "Re"; }
+    103% { content: "Res"; }
+    104% { content: "Rese"; }
+    105% { content: "Resea"; }
+    106% { content: "Resear"; }
+    107% { content: "Researc"; }
+    108% { content: "Research"; }
+    109%, 115% { content: "Researcher"; }
+
+    /* Pause before restarting animation */
+    116%, 120% { content: "Researcher"; }
+}
+
+
+  
   
   @keyframes blink {
     0%, 100% { opacity: 1; }
@@ -209,7 +213,5 @@ h1 {
     }
   }
 
-  @media (max-width:) {
-    
-  }
+
   
