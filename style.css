@@ -687,7 +687,7 @@ span {
     display: flex;
     justify-content: center;
     width: 100vw;
-  
+   
 
   }
 
@@ -720,7 +720,7 @@ span {
   
   .avatar {
   
-    height: 150px;
+    height: 250px;
     /* Set avatar size */
     /* Center vertically */
     left: 50%;
