@@ -11,9 +11,7 @@ canvas {
   opacity: 20%;
 }
 
-.homesec {
-  height: 100vh;
-}
+
 
 .stsec {
   height: 100vh;
@@ -27,7 +25,7 @@ canvas {
 
 .avatar {
 
-  height: 320px;
+  height: 420px;
   /* Set avatar size */
   top: 50%;
   /* Center vertically */
@@ -40,7 +38,7 @@ canvas {
 .maintextsec {
   position: absolute;
   color: white;
-  margin-top: -40vh;
+  margin-top: -60vh;
 }
 
 .nameh {
@@ -63,7 +61,7 @@ canvas {
 }
 
 .span {
-  font-size: 9vmin;
+  font-size: 6vmin;
   color: rgb(159, 255, 170);
   text-align: left;
   font-family: Lato, sans-serif;
@@ -487,7 +485,7 @@ span {
 .line-bottom {
   display: inline-block;
   border: solid rgb(3, 162, 0);
-  margin-top: 140px;
+  margin-top: 240px;
   width: 300px;
   height: 70px;
   border-width: 0 5px 5px 0;
@@ -504,6 +502,7 @@ span {
   font-family: "Share Tech Mono", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 
 }
 
@@ -545,6 +544,36 @@ span {
   }
 }
 
+/* Neon Animation */
+
+
+/* Skills Section */
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.skill-card{
+  margin-top: 50px;
+}
+
+.card {
+  border-radius: 10px;
+
+}
+
+.card-title {
+  color: #00ff00; /* Green for hacker theme */
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+.skills {
+  margin-top: 105vh;
+}
+
 
 /*RESPONSIVE */
 
@@ -552,7 +581,7 @@ span {
   .line-bottom {
     display: inline-block;
     border: solid rgb(3, 162, 0);
-    margin-top: 200px;
+    margin-top: 350px;
     width: 300px;
     height: 70px;
     border-width: 0 5px 5px 0;
@@ -575,6 +604,37 @@ span {
     margin-top: -5px;
   }
 
+  .mtpsec {
+    margin-top: 15px;
+    color: green;
+    animation: scaleup 2s ease-out 0s 1 forwards;
+    font-family: "Share Tech Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  
+
+  }
+
+  .maintextsec{
+    position: absolute;
+    color: white;
+    margin-top: -40vh;
+  }
+
+  .avatar {
+  
+    height: 320px;
+    /* Set avatar size */
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    margin-top: -100px;
+  
+  
+  }
+  
+
 
 
 }
@@ -584,7 +644,7 @@ span {
   .line-bottom {
     display: inline-block;
     border: solid rgb(3, 162, 0);
-    margin-top: 140px;
+    margin-top: 230px;
     width: 300px;
     height: 70px;
     border-width: 0 5px 5px 0;
@@ -607,14 +667,15 @@ span {
 
   .maintextsec {
 
-    width: 100vw;
-    margin-top: 20px;
+    
+    margin-top: -10px;
     
   }
 
   .typewriter {
     color: rgb(103, 255, 103);
-    font-size: 20px;
+    font-size: 30px;
+    
   }
 
   .adn {
@@ -627,10 +688,7 @@ span {
     font-size: 30px;
   }
 
-  .avatardiv {
-    margin-top: 20vh;
-  
-  }
+
   
   .avatar {
   
@@ -639,7 +697,7 @@ span {
     /* Center vertically */
     left: 50%;
     /* Center horizontally */
-    margin-top: -100px;
+    margin-top: -50px;
   
   
   }
@@ -656,27 +714,29 @@ span {
   }
   
   .span {
-    font-size: 9vmin;
+  
     color: rgb(159, 255, 170);
     text-align: left;
     font-family: Lato, sans-serif;
     font-weight: 700;
-    margin-top: -40px;
+    margin-top: 10px;
+    margin-left: 0;
+  
   }
 
 }
 
-@media (max-width:425px) {
+@media (max-width:431px) {
 
   .line-bottom {
     display: inline-block;
     border: solid rgb(3, 162, 0);
-    margin-top: 140px;
-    width: 300px;
+    margin-top: 240px;
+    width: 320px;
     height: 70px;
     border-width: 0 5px 5px 0;
     /* Bottom and right borders */
-    margin-left: 10px;
+   
     /* Space between top and bottom */
     animation: own2 2s ease-out 0s 1 forwards;
   }
@@ -684,12 +744,19 @@ span {
 
 
   .avatardiv {
-    margin-top: 70px ;
+    
     display: flex;
     justify-content: center;
-    width: 100vw;
-   
+    width: 90vw;
+   margin-top: 120px;
 
+  }
+
+  .maintextsec {
+    position: absolute;
+    color: white;
+    margin-top: -40vh;
+    width: 90vw;
   }
 
   .maintextsec {
@@ -697,11 +764,20 @@ span {
     width: 100vw;
     margin-top: 20px;
     
+    
   }
 
   .typewriter {
     color: rgb(103, 255, 103);
     font-size: 20px;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 40px;
+    width:80px;
+  
+  
   }
 
   .adn {
@@ -713,15 +789,10 @@ span {
     font-style: normal;
     font-size: 30px;
   }
-
-  .avatardiv {
-    margin-top: 20vh;
-  
-  }
   
   .avatar {
   
-    height: 150px;
+    height: 200px;
     /* Set avatar size */
     /* Center vertically */
     left: 50%;
@@ -734,12 +805,24 @@ span {
 
   
   .nameh {
-    margin-top: -50px;
+    margin-top: -10px;
     position: absolute;
     color: green;
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .mtpsec {
+    
+    color: green;
+    animation: scaleup 2s ease-out 0s 1 forwards;
+    font-family: "Share Tech Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    
+  
   }
   
   .span {
@@ -748,12 +831,49 @@ span {
     text-align: left;
     font-family: Lato, sans-serif;
     font-weight: 700;
-    margin-top: 40px;
+    margin-top: -20px;
+    width: 90vw;
+    
     
   }
 
 }
 
-@media (max-width:375px) {}
+@media (max-width:376px) {
 
-@media (max-width:320px) {}
+  .container {
+    display: flex;
+    margin-top: -15px;
+    width:80px;
+  
+  
+  }
+
+  .line-bottom {
+    display: inline-block;
+    border: solid rgb(3, 162, 0);
+    margin-top: 290px;
+    width: 320px;
+    height: 70px;
+    border-width: 0 5px 5px 0;
+    /* Bottom and right borders */
+   
+    /* Space between top and bottom */
+    animation: own2 2s ease-out 0s 1 forwards;
+  }
+
+}
+
+@media (max-width:320px) {
+  
+  .mtpsec {
+    margin-top: 30px;
+  color: green;
+  animation: scaleup 2s ease-out 0s 1 forwards;
+  font-family: "Share Tech Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  
+
+}}

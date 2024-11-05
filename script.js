@@ -11,9 +11,9 @@ const fontSize = 14;
 const columns = canvas.width / fontSize;
 
 // Array for drops
-const drops = [];
+const drops = []
 for (let x = 0; x < columns; x++) {
-    drops[x] = 1;
+    drops[x] = 1; 
 }
 
 // Different shades of green for variety
@@ -57,3 +57,18 @@ window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+
+
+// Example for highlighting card on hover (if needed)
+$('.card').hover(
+    function() {
+        $(this).css('background-color', '#444444'); // Change color on hover
+    }, 
+    function() {
+        $(this).css('background-color', '#333333'); // Revert color
+    }
+);
+
+
+
