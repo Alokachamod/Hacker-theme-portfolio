@@ -496,7 +496,7 @@ span {
 }
 
 .mtpsec {
-  margin-top: 20px;
+  margin-top: 60px;
   color: green;
   animation: scaleup 2s ease-out 0s 1 forwards;
   font-family: "Share Tech Mono", serif;
@@ -571,8 +571,204 @@ ul li {
 }
 
 .skills {
+  
   margin-top: 105vh;
 }
+
+/* Container for the line */
+.line-container {
+  width: 100px;
+  height: 10px;
+  background-color: darkgreen;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 46.5%;
+}
+
+/* The neon dot */
+.neon-dot {
+  width: 10px;
+  height: 10px;
+  background-color: lime; /* Neon green */
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  animation: move-dot 0.5s infinite alternate-reverse ease-in-out;
+}
+
+/* Testimonials section */
+.testimonials {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.testimonials h2 {
+  color: #00ff00;
+  
+}
+
+/* Container for the line */
+.tmline-container {
+  width: 300px;
+  height: 10px;
+  background-color: darkgreen;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 40%;
+}
+
+/* The neon dot */
+.tmneon-dot {
+  width: 10px;
+  height: 10px;
+  background-color: lime; /* Neon green */
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  animation: move-dot 0.5s infinite alternate-reverse ease-in-out;
+}
+
+.tc{
+  position: absolute;
+  margin-top: 20px;
+}
+
+/* Testimonial Style */
+.testimonial {
+  padding: 20px;
+  background: #1a1a1a;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  max-width: 700px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+/* Center Active Testimonial */
+.active-testimonial {
+  transform: scale(1.1);
+}
+
+/* Blurred Testimonials */
+.carousel-item:not(.active) .testimonial {
+  filter: blur(4px);
+  opacity: 0.5;
+}
+
+/* Client Message and Name */
+.client-message {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #a0ff9f;
+}
+
+.client-name {
+  font-style: italic;
+  color: #00ff00;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #00ff00;
+  border-radius: 50%;
+}
+
+/* Animation for the dot moving back and forth */
+@keyframes move-dot {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%; /* Move to the far right */
+    transform: translateX(-00%); /* Pull back by dot width to stay within line */
+  }
+}
+
+ /* Contact Section Styles */
+ .contact-section {
+  background-color: #0d1b2a;
+  color: #00ff00;
+}
+
+.contact-title {
+  color: #00ff00;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.subtitle {
+  color: #00ff00;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.info-card {
+  background-color: #0d1b2a;
+  border: 1px solid #00ff00;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ddd;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card i {
+  color: #00ff00;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 255, 0, 0.4);
+}
+
+
+
+.contact-form {
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.terminal-input {
+  background-color: #0d1b2a;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: "Share Tech Mono", monospace;
+  caret-color: #00ff00;
+}
+
+.terminal-input::placeholder {
+  color: #00ff00;
+  opacity: 0.7;
+}
+
+.btn-submit {
+  display: inline-block;
+  background-color: #00ff00;
+  color: #0d1b2a;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0b7d06;
+  color: #ffffff;
+}
+
+
 
 
 /*RESPONSIVE */
@@ -581,7 +777,7 @@ ul li {
   .line-bottom {
     display: inline-block;
     border: solid rgb(3, 162, 0);
-    margin-top: 350px;
+    margin-top: 250px;
     width: 300px;
     height: 70px;
     border-width: 0 5px 5px 0;
@@ -634,6 +830,25 @@ ul li {
   
   }
   
+  .line-container {
+    width: 100px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 45%;
+  }
+
+  .tmline-container {
+    width: 300px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 35%;
+  }
 
 
 
@@ -722,6 +937,30 @@ ul li {
     margin-top: 10px;
     margin-left: 0;
   
+  }
+
+  .line-container {
+    width: 100px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 43%;
+  }
+
+  .tmline-container {
+    width: 250px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 20%;
+  }
+
+  .mtpsec{
+    margin-top: 60px;
   }
 
 }
@@ -837,6 +1076,26 @@ ul li {
     
   }
 
+  .line-container {
+    width: 100px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 38%;
+  }
+
+  .tmline-container {
+    width: 230px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 21%;
+  }
+
 }
 
 @media (max-width:376px) {
@@ -862,9 +1121,20 @@ ul li {
     animation: own2 2s ease-out 0s 1 forwards;
   }
 
+  .tmline-container {
+    width: 230px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 17%;
+  }
+
+
 }
 
-@media (max-width:320px) {
+@media (max-width:322px) {
   
   .mtpsec {
     margin-top: 30px;
@@ -874,6 +1144,27 @@ ul li {
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
+
+  .tmline-container {
+    width: 300px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 40%;
+  }
+
+  .tmline-container {
+    width: 230px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: -5%;
+  }
   
 
 }}
+
