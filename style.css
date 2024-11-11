@@ -754,7 +754,7 @@ ul li {
 
 .terminal-input::placeholder {
   color: #00ff00;
-  opacity: 0.7;
+  
 }
 
 .btn-submit {
@@ -776,6 +776,51 @@ ul li {
 }
 
 
+.my-works-section {
+  /* Dark background for hacker feel */
+  color: #d4d4d4; /* Light gray text for readability */
+  padding: 60px 0;
+  text-align: center;
+}
+/* Title styling with slight neon green glow */
+
+/* Button styling with transparent background */
+.my-works-section .btn-hacker {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  color:  rgb(0, 204, 0); /* Green text */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid rgb(0, 204, 0); /* Green border */
+  border-radius: 50px; /* Rounded button for modern look */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 8px rgb(0, 204, 0);
+  text-transform: uppercase; /* Professional hacker style */
+}
+/* Hover effect for buttons */
+.my-works-section .btn-hacker:hover {
+  background-color: rgb(0, 204, 0); /* Neon green background on hover */
+  color: #0e0e0e; /* Dark text on hover */
+  box-shadow: 0px 4px 12px rgb(0, 204, 0); /* Neon glow */
+}
+
+.mwline-container {
+  width: 200px;
+  height: 10px;
+  background-color: darkgreen;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 42%;
+}
+/* Responsive button alignment */
+@media (max-width: 576px) {
+  .my-works-section .btn-group {
+      flex-direction: column;
+  }
+  .my-works-section .btn-hacker {
+      margin-bottom: 15px;
+  }
+}
 
 
 /*RESPONSIVE */
@@ -855,6 +900,16 @@ ul li {
     overflow: hidden;
     border-radius: 10px;
     margin-left: 35%;
+  }
+
+  .mwline-container {
+    width: 200px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 40%;
   }
 
 
@@ -963,11 +1018,21 @@ ul li {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    margin-left: 20%;
+    margin-left: 33%;
   }
 
   .mtpsec{
     margin-top: 60px;
+  }
+
+  .mwline-container {
+    width: 200px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 35%;
   }
 
 }
@@ -1103,6 +1168,16 @@ ul li {
     margin-left: 21%;
   }
 
+  .mwline-container {
+    width: 150px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 32%;
+  }
+
 }
 
 @media (max-width:376px) {
@@ -1170,6 +1245,16 @@ ul li {
     overflow: hidden;
     border-radius: 10px;
     margin-left: -5%;
+  }
+
+  .mwline-container {
+    width: 150px;
+    height: 10px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: -10%;
   }
   
 
