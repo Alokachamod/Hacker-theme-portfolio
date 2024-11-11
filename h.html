@@ -1,159 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hacker Theme Testimonials</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works - Professional Hacker Theme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      /* Contact Section Styles */
-      .contact-section {
-        background-color: #0d1b2a;
-        color: #00ff00;
-      }
-
-      .contact-title {
-        color: #00ff00;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        font-family: "Share Tech Mono", monospace;
-      }
-
-      .subtitle {
-        color: #00ff00;
-        opacity: 0.8;
-        font-size: 1rem;
-      }
-
-      .info-card {
-        background-color: #1a1a1a;
-        border: 1px solid #00ff00;
-        padding: 1rem;
-        border-radius: 8px;
-        color: #ddd;
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-
-      .info-card i {
-        color: #00ff00;
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      .info-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 20px rgba(0, 255, 0, 0.4);
-      }
-
-      .contact-form {
-        max-width: 600px;
-        margin-top: 2rem;
-      }
-
-      .terminal-input {
-        background-color: #0d1b2a;
-        color: #00ff00;
-        border: 1px solid #00ff00;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 15px;
-        font-family: "Share Tech Mono", monospace;
-        caret-color: #00ff00;
-      }
-
-      .terminal-input::placeholder {
-        color: #00ff00;
-        opacity: 0.7;
-      }
-
-      .btn-submit {
-        display: inline-block;
-        background-color: #00ff00;
-        color: #0d1b2a;
-        border: none;
-        padding: 0.5rem 2rem;
-        border-radius: 5px;
-        font-family: "Share Tech Mono", monospace;
-        font-weight: bold;
-        transition: background-color 0.2s;
-        cursor: pointer;
-      }
-
-      .btn-submit:hover {
-        background-color: #0b7d06;
-        color: #ffffff;
-      }
+        /* Section styling */
+        .my-works-section {
+            background-color: #0e0e0e; /* Dark background for hacker feel */
+            color: #d4d4d4; /* Light gray text for readability */
+            padding: 60px 0;
+            text-align: center;
+        }
+        /* Title styling with slight neon green glow */
+        .my-works-section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #00ff7f; /* Neon green for hacker vibe */
+            text-shadow: 0 0 5px rgba(0, 255, 127, 0.6);
+        }
+        /* Button styling with hacker green outline */
+        .my-works-section .btn-hacker {
+            font-size: 1.1rem;
+            padding: 12px 30px;
+            color: #0e0e0e; /* Dark text to match background on hover */
+            background-color: #00ff7f; /* Green background for hacker vibe */
+            border: 2px solid #00ff7f; /* Green border */
+            border-radius: 50px; /* Rounded button for modern look */
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 255, 127, 0.2);
+            text-transform: uppercase; /* Professional hacker style */
+        }
+        /* Hover effect for buttons */
+        .my-works-section .btn-hacker:hover {
+            background-color: transparent; /* Transparent on hover */
+            color: #00ff7f; /* Green text */
+            box-shadow: 0px 4px 12px rgba(0, 255, 127, 0.6); /* Neon glow */
+        }
+        /* Responsive button alignment */
+        @media (max-width: 576px) {
+            .my-works-section .btn-group {
+                flex-direction: column;
+            }
+            .my-works-section .btn-hacker {
+                margin-bottom: 15px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5">
-      <div class="container text-center">
-        <h2 class="contact-title">Contact Me</h2>
-        <p class="subtitle">Let's connect and collaborate!</p>
+</head>
+<body>
 
-        <!-- Contact Info Cards -->
-        <div class="row my-4">
-          <div class="col-md-4 mb-3">
-            <a href="https://wa.me/94704866124" target="_blank" class="info-card-link">
-              <div class="info-card">
-                <i class="fas fa-phone-alt"></i>
-                <p>+94 70 486 6124 (WhatsApp)</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="info-card">
-              <i class="fas fa-envelope"></i>
-              <p>your-email@example.com</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="info-card">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>Your Address, Sri Lanka</p>
-            </div>
-          </div>
-        </div>
+<div class="container my-works-section">
+    <h2>My Works</h2>
+    <div class="d-flex justify-content-center btn-group" role="group">
+        <button type="button" class="btn btn-hacker me-3">Web Project</button>
+        <button type="button" class="btn btn-hacker">Logo Design</button>
+    </div>
+</div>
 
-        <!-- Contact Form -->
-        <div class="contact-form mx-auto">
-          <form>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control terminal-input"
-                placeholder="> Your Name"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control terminal-input"
-                placeholder="> Your Email"
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                class="form-control terminal-input"
-                rows="4"
-                placeholder="> Your Message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-
-    <script></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

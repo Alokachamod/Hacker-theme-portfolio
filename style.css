@@ -727,6 +727,13 @@ ul li {
   box-shadow: 0 4px 20px rgba(0, 255, 0, 0.4);
 }
 
+.info-card p {
+  color: #0b7d06;
+}
+
+.info-card-link {
+  text-decoration: none ; 
+}
 
 
 .contact-form {
