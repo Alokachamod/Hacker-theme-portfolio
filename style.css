@@ -557,14 +557,8 @@ h2 {
   margin-top: 50px;
 }
 
-.card {
-  border-radius: 10px;
 
-}
 
-.card-title {
-  color: #00ff00; /* Green for hacker theme */
-}
 
 ul li {
   padding: 5px 0;
@@ -821,6 +815,59 @@ ul li {
       margin-bottom: 15px;
   }
 }
+
+    /* Footer Styling */
+    #footer {
+      background-color: #0a0f0f;
+      color: #00ff00;
+      padding: 40px 0;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+    }
+
+    #footer h4, #footer .footer-heading {
+      color: #00ff00;
+      text-shadow: 0 0 8px #00ff00;
+      margin-bottom: 20px;
+      font-weight: bold;
+      animation: glow 2s infinite alternate;
+    }
+
+    #footer .footer-link {
+      color: #00ff00;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    #footer .footer-link:hover {
+      color: #33ff33;
+      text-shadow: 0 0 12px #33ff33, 0 0 20px #33ff33;
+    }
+
+    /* Footer Columns Styling */
+    #footer .footer-column {
+      margin-bottom: 20px;
+    }
+
+    /* Animation */
+    @keyframes glow {
+      0% { text-shadow: 0 0 8px #00ff00; }
+      50% { text-shadow: 0 0 20px #33ff33, 0 0 30px #33ff33; }
+      100% { text-shadow: 0 0 8px #00ff00; }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      #footer h4 {
+        font-size: 1.5rem;
+      }
+      #footer .footer-heading {
+        font-size: 1.2rem;
+      }
+    }
+
 
 
 /*RESPONSIVE */

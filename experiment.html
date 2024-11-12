@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Loader</title>
+  <style>
+    /* Fullscreen Loader Container */
+    .loader-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #0d1b2a;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+    }
+    
+    /* Loader Animation Text */
+    .loader-text {
+      font-size: 20px;
+      letter-spacing: 2px;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* Blinking Cursor Animation */
+    .blinking-cursor {
+      display: inline-block;
+      width: 10px;
+      height: 24px;
+      background-color: #00ff00;
+      margin-left: 5px;
+      animation: blink 0.7s steps(2) infinite;
+    }
+
+    /* Keyframe Animations */
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* Simulated Loading Effect */
+    .loader-animation {
+      display: inline-block;
+      animation: loading 3s steps(10, end) infinite;
+    }
+
+    @keyframes loading {
+      0% { content: "Initializing"; }
+      20% { content: "Loading Assets"; }
+      40% { content: "Connecting to Server"; }
+      60% { content: "Applying Styles"; }
+      80% { content: "Rendering Portfolio"; }
+      100% { content: "Complete"; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loader HTML -->
+  <div class="loader-container">
+    <div class="loader-text">
+      <span class="loader-animation">Initializing</span><span class="blinking-cursor"></span>
+    </div>
+  </div>
+
+  <script>
+    // Text Array for Simulating Steps in Loader
+    const steps = [
+      "Initializing",
+      "Loading Assets",
+      "Connecting to Server",
+      "Applying Styles",
+      "Rendering Portfolio",
+      "Complete"
+    ];
+    
+    // Loader Animation Script
+    let index = 0;
+    const loaderText = document.querySelector('.loader-animation');
+
+    setInterval(() => {
+      loaderText.textContent = steps[index];
+      index = (index + 1) % steps.length;
+    }, 700); // Adjust interval time for faster or slower transitions
+  </script>
+</body>
+</html>

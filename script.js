@@ -72,3 +72,17 @@ $('.card').hover(
 
 
 
+function openwebport(){
+    window.location = "h.html";
+}
+
+function openlogoport() {
+    window.location = "logoportfolio.html";
+}
+
+function homepg(){
+    window.location = "index.html";
+}
+
+
+
