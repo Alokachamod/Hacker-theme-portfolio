@@ -1,421 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aloka Dev</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="bootstrap.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-
-
-      .card {
-  border-radius: 10px;
-  color:  #a0ff9f;
-  border-radius: 10px;
-  border: 13px;
-  border-color: #00ff00;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-
-}
-
-.card-title {
-  color: #00ff00; /* Green for hacker theme */
-}
-    </style>
-  </head>
-  <body style="background-color: #0d1b2a">
-    <canvas id="matrix"></canvas>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloka Dev - Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Aloka Dev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="h.html">Web Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="logoportfolio.html">Logo Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
     <main>
-      <!-- Existing Content -->
-      <section>
-        <div class="container-fluid">
-          <div class="col-12">
+        <section class="hero text-center text-light py-5">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore projects in web development, design, and more.</p>
+        </section>
+        
+        <section class="container portfolio-section">
             <div class="row">
-              <div class="stsec col-12">
-                <div class="avatardiv offset-lg-1">
-                  <img
-                    src="resources/my developer avatar green.png"
-                    alt="Avatar "
-                    class="avatar"
-                  />
-                </div>
-                <div class="maintextsec offset-lg-5 col-lg-6">
-                  <h6 class="nameh">Hi , I'm</h6>
-                  <h1 class="adn">Aloka Dev</h1>
-                  <h1 class="span" aria-label="Hi! I'm a developer">
-                    &nbsp;<span class="typewriter nocaret"></span>
-                  </h1>
-                  <div class="container">
-                    <div class="line-top"></div>
-                    <p class="mtpsec text-center">
-                      "I’m Aloka Chamod Champathi, founder of Swexzo and a
-                      full-stack developer with expertise in Python, Java, HTML,
-                      CSS, and PHP. With over a year in web development and
-                      three years in logo and graphic design, I create
-                      impactful, user-centered solutions..."
-                    </p>
-                    <div class="line-bottom"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="skills" class="skills">
-        <div class="container-fluid">
-          <div class="col-12">
-            <h2 class="text-center" style="color: rgb(0, 204, 0)">Skills</h2>
-            <div class="line-container">
-              <div class="neon-dot"></div>
-            </div>
-            <div class="skill-card">
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                  <div class="card bg-dark ">
-                    <div class="card-body">
-                      <h3 class="card-title ">Soft Skills</h3>
-                      <ul class="list-unstyled">
-                        <li>Communication Skills</li>
-                        <li>Teamwork</li>
-                        <li>Problem-Solving</li>
-                        <li>Adaptability</li>
-                        <li>Interpersonal Skills</li>
-                        <li>Strategic Vision</li>
-                        <li>Leadership Skills</li>
-                        <li>Financial Acumen</li>
-                        <li>Operational Expertise</li>
-                        <li>Decision-Making Ability</li>
-                        <li>Risk Management</li>
-                        <li>Innovation and Creativity</li>
-                        <li>Ethical Judgment and Integrity</li>
-                      </ul>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item position-relative">
+                        <img src="webportfolio/Swexzoweb.png" alt="Swexzo Solutions" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <h5>Swexzo Solutions</h5>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                  <div class="card bg-dark  ">
-                    <div class="card-body">
-                      <h3 class="card-title ">Technical Skills</h3>
-                      <ul class="list-unstyled">
-                        <li>Technical Proficiency</li>
-                        <li>Proficiency in Programming Languages</li>
-                        <li>Understanding of Data Structures and Algorithms</li>
-                        <li>Version Control Systems</li>
-                        <li>Software Development Methodologies</li>
-                        <li>Debugging and Testing</li>
-                        <li>Database Management</li>
-                        <li>Web Development Skills</li>
-                      </ul>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item position-relative">
+                        <img src="webportfolio/swartweb.png" alt="Swart Industries" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <h5>Swart Industries</h5>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <div class="container my-works-section">
-        <div class="col-12">
-<div class="">
-  <h2 class="text-center" style="color: rgb(0, 204, 0)">
-    My Works
-  </h2>
-  <!-- Add "mb-4" here -->
-  <div class="mwline-container mb-5">
-    <div class="neon-dot"></div>
-  </div>
-            <div class="d-flex justify-content-center btn-group" role="group">
-              <button type="button" class="btn btn-hacker me-3" onclick="openwebport();">Web Project</button>
-              <button type="button" class="btn btn-hacker" onclick="openlogoport();">Logo Design</button>
-            </div>
-</div>
-        </div>
-      </div>
-
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials my-5">
-        <div class="container-fluid">
-          <h2 class="text-center" style="color: rgb(0, 204, 0)">
-            Client Testimonials
-          </h2>
-          <!-- Add "mb-4" here -->
-          <div class="tmline-container mb-5">
-            <div class="neon-dot"></div>
-          </div>
-          <div
-            id="testimonialCarousel"
-            class="carousel slide"
-            data-ride="carousel"
-            data-interval="3000"
-          >
-            <!-- Add "mt-4" here -->
-            <div class="carousel-inner text-center">
-              <div class="carousel-item active">
-                <div class="testimonial active-testimonial">
-                  <p class="client-message">
-                    “This is exactly the futuristic web experience I envisioned.
-                    It’s sleek, fast, and full of personality. You’ve raised the
-                    bar with this design!”
-                  </p>
-                  <span class="client-name"
-                    >- Jake Thompson, Web Development</span
-                  >
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="testimonial">
-                  <p class="client-message">
-                    “This logo perfectly represents my brand! The design is
-                    modern yet timeless. I’m thrilled with the outcome!”
-                  </p>
-                  <span class="client-name"
-                    >- Lakmal Fernando, Logo Design</span
-                  >
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="testimonial">
-                  <p class="client-message">
-                    “The logo is beyond amazing! It’s minimalist and memorable,
-                    just what I needed. Thank you for your attention to detail.”
-                  </p>
-                  <span class="client-name">- Emily Chen, Logo Design</span>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="testimonial">
-                  <p class="client-message">
-                    “Superb work! The logo’s aesthetic aligns perfectly with my
-                    brand. Clean, professional, and unique!”
-                  </p>
-                  <span class="client-name"
-                    >- Harsha Senanayake, Logo Design</span
-                  >
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="testimonial">
-                  <p class="client-message">
-                    “Love the creativity! The logo has a stylish touch that
-                    brings out the essence of my business. Great work!”
-                  </p>
-                  <span class="client-name">- Olga Kuznetsov, Logo Design</span>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="testimonial">
-                  <p class="client-message">
-                    “The colors and typography are perfect! This logo feels very
-                    personal and adds so much value to my brand.”
-                  </p>
-                  <span class="client-name"
-                    >- Tharanga Karunaratne, Logo Design</span
-                  >
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="testimonial">
-                  <p class="client-message">
-                    “It’s exactly what I imagined! The logo is sharp, modern,
-                    and unique—perfect for my growing business.”
-                  </p>
-                  <span class="client-name">- Carlos Mendez, Logo Design</span>
-                </div>
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#testimonialCarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#testimonialCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- Contact Section -->
-      <section id="contact" class="contact-section py-5">
-        <div class="container-fluid">
-          <div class="col-12 text-center">
-            <h2 class="text-center" style="color: rgb(0, 204, 0)">
-              Contact me
-            </h2>
-            <!-- Add "mb-4" here -->
-            <div class="tmline-container mb-5">
-              <div class="neon-dot"></div>
-            </div>
-            <p class="subtitle">Let's connect and collaborate!</p>
-
-            <!-- Contact Info Cards -->
-            <div class="row my-4">
-              <div class="col-md-4 mb-3">
-                <a
-                  href="https://wa.me/94704866124"
-                  target="_blank"
-                  class="info-card-link"
-                >
-                  <div class="info-card">
-                    <i class="fas fa-phone-alt"></i>
-                    <p>+94 70 486 6124 (WhatsApp)</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <div class="info-card">
-                  <i class="fas fa-envelope"></i>
-                  <p>alokachamod3@gmail.com</p>
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <div class="info-card">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>
-                    50/12D,Rubber Mill Road , Angagoda , Bentota , Sri Lanka
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form mx-auto">
-              <form action="https://api.web3forms.com/submit" method="POST">
-
-                <input type="hidden" name="access_key" value="64360cf4-7f35-4bc2-bfc3-12af42ed617b">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control terminal-input"
-                    style="
-                      background-color: #0d1b2a;
-                      color: #00ff00;
-                      border: 1px solid #00ff00;
-                      border-radius: 5px;
-                      padding: 10px;
-                      margin-bottom: 15px;
-                      caret-color: #00ff00;
-                    "
-                    placeholder="> Your Name" name="subject"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control terminal-input"
-                    style="
-                      background-color: #0d1b2a;
-                      color: #00ff00;
-                      border: 1px solid #00ff00;
-                      border-radius: 5px;
-                      padding: 10px;
-                      margin-bottom: 15px;
-                      caret-color: #00ff00;
-                    "
-                    placeholder="> Your Email" name="massage"
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control terminal-input"
-                    style="
-                      background-color: #0d1b2a;
-                      color: #00ff00;
-                      border: 1px solid #00ff00;
-                      border-radius: 5px;
-                      padding: 10px;
-                      margin-bottom: 15px;
-                      caret-color: #00ff00;
-                    "
-                    rows="4"
-                    placeholder="> Your Message" name = "massage"
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Send Message</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-    <!-- Footer -->
-<footer id="footer">
-  <div class="container-fluid">
-<div class="col-12">
-  <h3>Connect with Me</h3>
-      <div class="row justify-content-center">
-        
-        <!-- Social Media Links Column -->
-        <div class="col-md-4 footer-column">
-          <h5 class="footer-heading">Social Media</h5>
-          <a href="https://github.com/yourusername" target="_blank" class="footer-link">GitHub</a><br>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" class="footer-link">LinkedIn</a><br>
-          <a href="https://twitter.com/yourusername" target="_blank" class="footer-link">Twitter</a><br>
-          <a href="https://instagram.com/yourusername" target="_blank" class="footer-link">Instagram</a><br>
-          <a href="https://instagram.com/yourusername" target="_blank" class="footer-link">Facebook</a><br>
-          <a href="https://instagram.com/yourusername" target="_blank" class="footer-link">You Tube</a><br>
-          <a href="https://instagram.com/yourusername" target="_blank" class="footer-link">Tik Tok</a><br>
-          <a href="https://instagram.com/yourusername" target="_blank" class="footer-link">DailyDairy</a><br>
-        </div>
-  
-        <!-- Company Links Column -->
-        <div class="col-md-4 footer-column">
-          <h5 class="footer-heading">My Companies</h5>
-          <a href="https://yourcompany1.com" target="_blank" class="footer-link">Swexzo Solutions</a><br>
-          <a href="https://yourcompany2.com" target="_blank" class="footer-link">Swart Industries(Upcoming innovation company)</a><br>
-          
-        </div>
-  
-        <!-- Additional Links Column -->
-        <div class="col-md-4 footer-column">
-          <h5 class="footer-heading">Explore</h5>
-          <a href="#about" class="footer-link">Portfolio</a><br>
-          <a href="#projects" class="footer-link">Researches</a><br>
-          <a href="#contact" class="footer-link">Upcoming Project</a><br>
-          <a href="#privacy" class="footer-link">Blogs</a>
-        </div>
-        
-      </div>
-      <p class="mt-4">&copy; 2024 Aloka Dev. All rights reserved.</p>
-</div>
-  </div>
-</footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <footer class="text-center text-light py-4 bg-dark">
+        <p>&copy; 2025 Aloka Dev. All rights reserved.</p>
+    </footer>
+    
     <script src="script.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
